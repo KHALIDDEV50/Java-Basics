@@ -5,56 +5,56 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        // Aswer (Q1)
+        //  (Q1) 1. Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of two numbers ,
+        //  takes two numbers as input
 
-        /*System.out.println("Enter First Number: ");
+        System.out.println("Enter First Number: ");
         int num1 = input.nextInt();
         System.out.println("Enter Secound Number: ");
         int num2 = input.nextInt();
         //int sum;
-        System.out.println(num1+"+"+ num2 +"= "+num1+num2);
+        System.out.println(num1+"+"+ num2 +"= "+(num1+num2));
         System.out.println(num1+"-"+ num2 +"= "+(num1-num2));
         System.out.println(num1+"/"+ num2 +"= "+(num1/num2));
         System.out.println(num1+"*"+ num2 +"= "+(num1*num2));
-        System.out.println(num1+"%"+ num2 +"= "+(num1%num2));*/
+        System.out.println(num1+"%"+ num2 +"= "+(num1%num2));
 
-        // (Q2)
+        // (Q2) 2. Write a Java program that takes a number as input and prints its multiplication table up to
 
-        /*System.out.println("Enter The Number: ");
+        System.out.println("Enter The Number: ");
         int number = input.nextInt();
         int mult = 1;
         for (int i = 1 ; i <= 10 ; i++){
 
             mult = number * i;
             System.out.println(mult);
-        }*/
+        }
 
-        // (Q3)
+        // (Q3) Write a Java program to print the area and perimeter of a circle.
+        System.out.print("Enter the radius: ");
+        double radius = input.nextDouble();
 
-            /*System.out.println("Enter Radius:");
-            double radius = input.nextDouble();
-            *//*System.out.println("Enter the Perimeter");
-            double perimeter = input.nextDouble();*//*
-
-            double perimeter = radius * 3.14 * 2;
-            double area = perimeter *2;
-            System.out.println("perimeter = "+ perimeter);
-            System.out.println("Area Is = " +area);*/
+        double area = 3.14 * radius * radius;
+        double perimeter = 2 * 3.14 * radius;
+        System.out.println("perimeter = " + perimeter);
+        System.out.println("Area Is = " + area);
 
 
-        // (Q4)
-        /*int sum = 1;
-        double ave = 1;
-        for (int i = 1; i <= 5 ; i++){
+        // (Q4) Java program to find out the average of a set of integers
+        int sum = 0;
+        double ave ;
+        for (int i = 1; i <= 6 ; i++){
             System.out.println("Enter The Ineger Number:  ");
             int inNumber = input.nextInt();
-            sum += i ;
-            ave = sum / i;
+            sum += inNumber ;
         }
-        System.out.println("The Average: " + ave);*/
+        ave = sum / 6;
+        System.out.println("The Average: " + ave);
 
-        // (Q5)
-        /*System.out.println("Enter first Integer Number: ");
+
+        // (Q5) Write a Java program that accepts three integers as input, adds the first two integers together,
+        // and then determines whether the sum is equal to the third integer.
+        System.out.println("Enter first Integer Number: ");
         int num1 = input.nextInt();
         System.out.println("Enter Second Integer Number: ");
         int num2 = input.nextInt();
@@ -66,74 +66,73 @@ public class Main {
 
         }else {
             System.out.println("false");
-        }*/
+        }
 
-        // (Q6)
+        // (Q6) Write a Java program to reverse a word.
 
-       /* System.out.println("Enter Of Word: ");
+        System.out.println("Enter Of Word: ");
 
         String word = input.nextLine();
 
         for (int i = word.length() - 1; i >= 0; i--) {
             System.out.print(word.charAt(i));
-        }*/
+        }
 
-        // (Q7)
+        // (Q7) Java program to check whether the given number is even or odd
 
-        /*System.out.println("Enter Of Number");
+        System.out.println("Enter Of Number");
         int number = input.nextInt();
         if ( number % 2 == 0){
             System .out.println("The Number Is Even");
         }
         else {
             System .out.println("The Number Is Odd");
-        }*/
+        }
 
-        // (Q8)
+        // (Q8) Java program to convert the temperature in Centigrade to Fahrenheit
 
-//        System.out.println("Enter Temperature in Centigrade: ");
-//        float centigrade = input.nextFloat();
-//
-//
-//        double fahr = (centigrade* 1.8) +32;
-//
-//        System.out.println("Temperature in fahrehint is" +fahr);
+        System.out.println("Enter Temperature in Centigrade: ");
+        float centigrade = input.nextFloat();
 
 
-        // (Q9)
+        double fahr = (centigrade* 1.8) +32;
 
-//        System.out.println("Enter the String");
-//        String st = input.nextLine();
-//
-//        System.out.println("Enter Number of index");
-//        int numOfIndex = input.nextInt();
-//
-//        char letter;
-//
-//        letter = st.charAt(numOfIndex);
-//
-//        System.out.println( letter);
+        System.out.println("Temperature in fahrehint is " +fahr);
 
-        // (Q10)
+        // (Q9) .Write a Java program that takes a string and a number from the user,then prints the character in the given index.
 
-        /*System.out.println("Enter With: ");
+        System.out.println("Enter the String");
+        String st = input.nextLine();
+
+        System.out.println("Enter Number of index");
+        int numOfIndex = input.nextInt();
+
+        char letter;
+
+        letter = st.charAt(numOfIndex);
+
+        System.out.println( letter);
+
+        // (Q10) Write a Java program to print the area and perimeter of a rectangle.
+
+        System.out.println("Enter With: ");
         float with = input.nextFloat();
 
         System.out.println("Enter Height: ");
         float height = input.nextFloat();
 
         System.out.println("Enter The Perimeter");
-        int perimeter = input.nextInt();
+        //int perimeter = input.nextInt();
 
         double result = with * height;
         double resP = perimeter * (with+height);
 
         System.out.println("Area Is: " +result);
-        System.out.println("perimeter Is: (" +with + " + " + height +") = " +resP);*/
+        System.out.println("perimeter Is: (" +with + " + " + height +") = " +resP);
 
-        // (Q11)
+        // (Q11) Write a Java program to compare two numbers.
 
-        /*System.out.println("Enter the firest Number: ");
+        System.out.println("Enter the firest Number: ");
         int number1 = input.nextInt();
 
         System.out.println("Enter the Second Number: ");
@@ -147,33 +146,25 @@ public class Main {
 
             System.out.println(number1 + "<" + number2);
         }
-        else {
+        if ( number1 <= number2) {
             System.out.println(number1 + "<=" + number2);
-        }*/
+        }
 
-        // (Q12)
+        // (Q12) Write a Java program to convert seconds to hours, minutes and seconds.
 
-     /*   System.out.println("Enter Number for Seconds: ");
+        System.out.println("Enter Number for Seconds: ");
 
-        int sec = input.nextInt(); // 7200
+        int seconds = input.nextInt(); // 7200
+        int hours = seconds / 3600;
+        int minutes = (seconds % 3600) / 60;
+        int remainingSeconds = seconds % 60;
 
-        int secToH = sec / 3600;  //7200 / 3600 == 2
-        System.out.println(secToH);
-
-        int secTosmun= sec / 60; // 180  / 60 == 30
-
-        System.out.println(secTosmun);
+        System.out.println(hours+":"+minutes+":"+":"+remainingSeconds);
 
 
-        *//*int secTosmun= sec / 60;
-        int mutTosec = secTosmun / 60;*//*
+        // Q(13) Write a Java program that accepts four integers from the user and prints equal if all four are equal, and not equal otherwise.
 
-
-        //System.out.print(secTosmun);*/
-
-        // Q(13)
-
-        /*System.out.println("Enter first Number: ");
+        System.out.println("Enter first Number: ");
         int num1 = input.nextInt();
         System.out.println("Enter second Number: ");
         int num2 = input.nextInt();
@@ -183,43 +174,108 @@ public class Main {
         int num4 = input.nextInt();
 
         if (num1 == num2 && num2 == num3 && num3 == num4){
-            System.out.println(" if all four are equal..");
+            System.out.println("All four Number are equal..");
         }else {
-            System.out.println("Number are not equal...");
-        }*/
+            System.out.println("All four Number are not equal...");
+        }
 
-        // (Q14)
+        // (Q14) Write a Java program that reads an integer and check whether it is negative, zero, or positive.
 
-//        System.out.println("Enter Of Number: ");
-//        int num = input.nextInt();
-//
-//        if (num > 0){
-//            System.out.println("Number is positive");
-//        } else if (num == 0) {
-//            System.out.println("Number is Zero");
-//        }
-//        else {
-//            System.out.println("Number is negative");
-//        }
+        System.out.println("Enter Of Number: ");
+        int num = input.nextInt();
 
-        // (Q15)
+        if (num > 0){
+            System.out.println("Number is positive");
+        } else if (num == 0) {
+            System.out.println("Number is Zero");
+        }
+        else {
+            System.out.println("Number is negative");
+        }
 
+        // (Q15) 15.Write a program to enter the numbers till the user wants and at the end it
+        // should display the count of positive, negative and zeros entered (End loop use -1 ,Don’t count -1
+        int numberPositive = 0;
+        int numberNegative  = 0;
+        int zero = 0;
 
-
-        /*int count =1 ;
-        for (int i = 0 ; i <= count ;i++){
-            System.out.println("Enter Of Number: ");
+        for (int i = 1; i <= 100; i++ ){
+            System.out.print("Enter number: ");
             int num = input.nextInt();
-            if (num == -1){
+
+            if ( num == -1){
                 break;
             }
-            if ( i > 0){
-                System.out.println( i+ "Number is positive" );
-            } else if (i < 0) {
-                System.out.println(i +"Number is negative" );
+            if (num >0){
+                numberPositive++;
+            } else if (num < 0) {
+                numberNegative ++ ;
             }
-            count++;
-        }*/
+            else {
+                zero++;
+            }
+        }
+        System.out.println("Positive: " + numberPositive);
+        System.out.println("Negative: " + numberNegative);
+        System.out.println("Zero: " + zero);
+
+        // (Q16) Write a program that prompts the user to input an integer and then outputs the number with the digits reversed.
+        System.out.print("Enter a number: ");
+        String num = input.next();
+
+        String reverse = "";
+
+        for (int i = num.length() - 1; i >= 0; i--) {
+            reverse = reverse + num.charAt(i);
+        }
+        System.out.println("Reversed: " + reverse);
+
+        // (Q17)Write a program to enter the numbers till the user wants and at the end
+        // the program should display the largest and smallest numbers entered.
+        int largNumber = 0;
+        int smallNumber = 0;
+
+        for (int i = 0; i < 100; i++) {
+
+            System.out.print("Enter number: ");
+            int number = input.nextInt();
+
+            if (number == -1) {
+                break;
+            }
+
+            if (i == 0) {
+                largNumber = number;
+                smallNumber = number;
+            }
+
+            if (number > largNumber) {
+                largNumber = number;
+            }
+
+            if (number < smallNumber) {
+                smallNumber = number;
+            }
+        }
+
+        System.out.println("The large Number: " + largNumber);
+        System.out.println("The Small Number: " + smallNumber);
+
+        // (Q18)Determine and print the number of times the character ‘a’ appears in the input entered by the user.
+
+        System.out.println("Enter Tne Word...");
+        String word = input.nextLine();
+        int count = 0;
+        for (int i = 0 ; i <= word.length() -1 ; i++){
+            if (word.charAt(i) == 'a'){
+                count++;
+            }
+        }
+        System.out.println("Output: Number of a's: "+count);
+
+
+
+
 
 
     }
