@@ -1,4 +1,4 @@
-ximport java.util.Locale;
+ ximport java.util.Locale;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -20,8 +20,9 @@ public class Main {
             System.out.println("welcome user");
         }
         */
-        // ==> Answer (Q2)
-        System.out.println("Plz Enter Three Number");
+        //  (Q2) Write a program that takes the obtained marks and total marks as input and
+        //  calculates the percentage, then prints it.
+        /*System.out.println("Plz Enter Three Number");
         int num1 = input.nextInt();
         int num2 = input.nextInt();
         int num3 = input.nextInt();
@@ -32,7 +33,14 @@ public class Main {
             System.out.println("The greatest number is: " + num2);
         } else {
             System.out.println("The greatest number is: " + num3);
-        }
+        }*/
+        int totalMarks = 100;
+        int obtainedMarks = (int)(Math.random() * 101);
+
+        double percentage = obtainedMarks * 100 / totalMarks;
+
+        System.out.println("Marks: " + obtainedMarks);
+        System.out.println("Percentage: " + percentage + "%");
        // ==> Answer (Q3)
         /*
         System.out.println("Enter Number form 1 To 7");
