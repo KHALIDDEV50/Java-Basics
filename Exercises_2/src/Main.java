@@ -1,4 +1,4 @@
-import java.util.Locale;
+ximport java.util.Locale;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -21,7 +21,6 @@ public class Main {
         }
         */
         // ==> Answer (Q2)
-        /*
         System.out.println("Plz Enter Three Number");
         int num1 = input.nextInt();
         int num2 = input.nextInt();
@@ -34,7 +33,6 @@ public class Main {
         } else {
             System.out.println("The greatest number is: " + num3);
         }
-         */
        // ==> Answer (Q3)
         /*
         System.out.println("Enter Number form 1 To 7");
@@ -96,7 +94,7 @@ public class Main {
          */
         // ==> Answer (Q5)
 
-        System.out.println("Enter your age: ");
+       /* System.out.println("Enter your age: ");
         int age = input.nextInt();
 
         if (age < 13 ){
@@ -107,7 +105,7 @@ public class Main {
         } else if (age >= 20) {
             System.out.println("You are an Adult.");
 
-        }
+        }*/
 
 
     }

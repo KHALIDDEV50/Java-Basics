@@ -239,7 +239,7 @@ public class Main {
 
             System.out.print("Enter number: ");
             int number = input.nextInt();
-
+    // boolen  ------------
             if (number == -1) {
                 break;
             }

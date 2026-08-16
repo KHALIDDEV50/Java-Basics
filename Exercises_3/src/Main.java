@@ -123,7 +123,7 @@ public class Main {
         /*8.Write a program thats check if the word is a palindrome(كلمة متشابهة من اليمين او الشمال مثل madam) or not. hint:
          A string is said to be a palindrome if it is the same if we start reading it from
          left to right or right to left.*/
-            System.out.println("Enter a word: ");
+           /* System.out.println("Enter a word: ");
             String word = input.nextLine();
             String reverse = "";
             for (int i = word.length() - 1; i >= 0; i--) {
@@ -138,7 +138,7 @@ public class Main {
             }
 
 
-        }
+        }*/
 
 
     }
