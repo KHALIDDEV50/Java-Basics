@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Input the first number: ");
         int num1 = input.nextInt();
         System.out.println("Input the Second number: ");
-        int num2 = input.nextInt();ß
+        int num2 = input.nextInt();
         System.out.println("Input the third number: ");
         int num3 = input.nextInt();
 

@@ -42,37 +42,27 @@ public class Main {
         double percentage = obtainedMarks * 100 / totalMarks;
 
         System.out.println("Marks: " + obtainedMarks);
-        System.out.println("Percentage: " + percentage + "%"*/);
+        System.out.println("Percentage: " + percentage + "%");*/
        // ==> Answer (Q3)
-        /*
-        System.out.println("Enter Number form 1 To 7");
-        int day = input.nextInt();
-        switch (day) {
-            case 1:
-                System.out.println("Sunday");
-                break;
-            case 2:
-                System.out.println("Monday");
-                break;
-            case 3:
-                System.out.println("Tuesday");
-                break;
-            case 4:
-                System.out.println("Wednesday");
-                break;
-            case 5:
-                System.out.println("Thursday");
-                break;
-            case 6:
-                System.out.println("Friday");
-                break;
-            case 7:
-                System.out.println("Saturday");
-                break;
-            default:
-                System.out.println("Invalid number");
-        }
-         */
+        // 3.Write a Java program that generates an integer between 1 and 7 and displays the name of the weekday.
+
+        int day = (int)(Math.random() * 7) + 1;
+
+        System.out.println(day);
+        if (day == 1)
+            System.out.println("Monday");
+        else if (day == 2)
+            System.out.println("Tuesday");
+        else if (day == 3)
+            System.out.println("Wednesday");
+        else if (day == 4)
+            System.out.println("Thursday");
+        else if (day == 5)
+            System.out.println("Friday");
+        else if (day == 6)
+            System.out.println("Saturday");
+        else
+            System.out.println("Sunday");
 
         // ==> Answer (Q4)
         /*
@@ -116,13 +106,7 @@ public class Main {
             System.out.println("You are an Adult.");
 
         }*/
-
-
-
-    // methd
-        printFullname name = new printFullname();
-        name.printFullname()
     }
 }
-// Crete method
+
 
