@@ -3,9 +3,10 @@ import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+
         // ==> Answer (Q1)
         /*
         System.out.println("Enter role:\n");
@@ -34,13 +35,14 @@ public class Main {
         } else {
             System.out.println("The greatest number is: " + num3);
         }*/
-        int totalMarks = 100;
+
+        /*int totalMarks = 100;
         int obtainedMarks = (int)(Math.random() * 101);
 
         double percentage = obtainedMarks * 100 / totalMarks;
 
         System.out.println("Marks: " + obtainedMarks);
-        System.out.println("Percentage: " + percentage + "%");
+        System.out.println("Percentage: " + percentage + "%"*/);
        // ==> Answer (Q3)
         /*
         System.out.println("Enter Number form 1 To 7");
@@ -116,5 +118,11 @@ public class Main {
         }*/
 
 
+
+    // methd
+        printFullname name = new printFullname();
+        name.printFullname()
     }
 }
+// Crete method
+
