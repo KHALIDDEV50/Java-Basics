@@ -50,7 +50,7 @@ public class Main {
     public static int smallest(int num1, int num2, int num3) {
         Scanner input = new Scanner(System.in);
         int smaller = num1;
-        if (num2 > num1) {
+        if (num2 < num1) {
             smaller = num2;
         } else {
             smaller = num3;
