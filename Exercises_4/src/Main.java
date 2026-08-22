@@ -48,7 +48,7 @@ public class Main {
             }
         }*/
 
-    // (Q3).Write a Java program to get the larger value between first
+        // (Q3).Write a Java program to get the larger value between first
         // and last element of an array of integers. [20, 30, 40]
 
         /*System.out.print("Enter array size: ");
@@ -96,10 +96,24 @@ public class Main {
 
         System.out.println("Enter Array:");
 
-        System.out.println("Enter Arry: ");
         int arr[] = new int[9];
-        for (int i =0 ; i < 9 ; i++){
-            arr[i] = input.nextInt();   
+
+        for (int i = 0; i < 9; i++) {
+            arr[i] = input.nextInt();
+        }
+
+         // Print odd numbers
+        for (int i = 0; i < 9; i++) {
+            if (arr[i] % 2 != 0) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+
+         // Print even numbers
+        for (int i = 0; i < 9; i++) {
+            if (arr[i] % 2 == 0) {
+                System.out.print(arr[i] + " ");
+            }
         }
 
 
