@@ -15,26 +15,39 @@ public class Main {
          * "cat", "dog", "red", "is", "am"*/
         System.out.println("Enter Size Of Array:");
         int size = input.nextInt();
+
         String[] arrWord = new String[size];
+
         input.nextLine();
+
         for (int i = 0; i < size; i++) {
-            System.out.println("Enter word:" + (i + 1));
+            System.out.println("Enter word: " + (i + 1));
             arrWord[i] = input.nextLine();
         }
-        for (int j = 0; j < size; j++) {
-            System.out.print("{" + arrWord[j] + "}");
 
-        }
-        System.out.println("");
-
-        int max = arrWord[0].length();
         for (int i = 0; i < size; i++) {
-            if (arrWord[i].length() == max) {
-                System.out.print("{" + arrWord[i] + "}");
+            System.out.print("{" + arrWord[i] + "} ");
+        }
+
+        System.out.println();
+
+// Search for longest word
+        int max = arrWord[0].length();
+
+        for (int i = 1; i < size; i++) {
+            if (arrWord[i].length() > max) {
+                max = arrWord[i].length();
             }
         }
 
-        /*(Q2)-. Write a program that displays the number of occurrences of an element in the array.*/
+// Print all longest words
+        for (int i = 0; i < size; i++) {
+            if (arrWord[i].length() == max) {
+                System.out.print("{" + arrWord[i] + "} ");
+            }
+        }
+
+       /* *//*(Q2)-. Write a program that displays the number of occurrences of an element in the array.*//*
         System.out.println("Enter Size Of Array:");
         int size = input.nextInt();
         int[] number = new int[size];
@@ -53,7 +66,7 @@ public class Main {
         }
         System.out.println(search + " occurs " + count + " times");
 
-        /*(Q3).Write a program to find the k largest elements in a given array. Elements in the array can be in any order.*/
+        *//*(Q3).Write a program to find the k largest elements in a given array. Elements in the array can be in any order.*//*
         System.out.println("Enter Size Of Array:");
         int size = input.nextInt();
 
@@ -81,20 +94,20 @@ public class Main {
             System.out.print(number[i] + " ");
         }
 
-        /*(Q4).Create a method to reverse an array of integers. Implement the method without creating a new array.*/
+        *//*(Q4).Create a method to reverse an array of integers. Implement the method without creating a new array.*//*
         int[] numbers = {10, 20, 30, 40, 50};
         reverseArray(numbers);
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
 
-        /*(Q5)5. Write a menu driven Java program with following option:
+        *//*(Q5)5. Write a menu driven Java program with following option:
          * 1- Accept elements of an array
          * 2- Display elements of an array
          * 3- Search the element within array
          * 4- Sort the array 5. To Stop
          * 5-the size of the array should be entered by the user.
-         * */
+         * *//*
         System.out.println("Enter size of array:");
         int size = input.nextInt();
 
@@ -174,8 +187,8 @@ public class Main {
                     System.out.println("Invalid choice");
             }
         }
-        /*(Q6)Create a method that generates a random number within a given range. Allow the user to specify the range and call the method to display random numbers
-        Hint: use Random class.*/
+        *//*(Q6)Create a method that generates a random number within a given range. Allow the user to specify the range and call the method to display random numbers
+        Hint: use Random class.*//*
 
         System.out.print("Enter minimum: ");
         int min = input.nextInt();
@@ -185,7 +198,7 @@ public class Main {
 
         System.out.println("Random Number: " + randomNumber(min, max));
 
-        /*(Q7)Write a program that checks the strength of a password. Create a method that evaluates a password based on
+        *//*(Q7)Write a program that checks the strength of a password. Create a method that evaluates a password based on
          criteria like length, inclusion of special characters,
          and uppercase/lowercase letters.
          - We have three methods: checkLength, checkSpecialCharacters, and checkUpperCaseLowerCase,
@@ -196,7 +209,7 @@ public class Main {
           -The criteria for scoring:
              - Length: 0-5 characters (0 points), 6-7 characters (2 points), 8 or more characters (3 points).
              - Special characters: Absence (0 points), Presence (2 points).
-             - Uppercase and lowercase letters: Absence of both (0 points), presence of both (3 points).*/
+             - Uppercase and lowercase letters: Absence of both (0 points), presence of both (3 points).*//*
         System.out.print("Enter password: ");
         String password = input.nextLine();
 
@@ -214,9 +227,9 @@ public class Main {
             System.out.println("Weak Password");
         }
 
-         /*(Q8)Create a method that generates the Fibonacci sequence up to a specified number of terms
+         *//*(Q8)Create a method that generates the Fibonacci sequence up to a specified number of terms
          Hint: The Fibonacci sequence is a mathematical sequence of numbers that starts with 0 and 1,
-         and each subsequent number in the sequence is the sum of the two preceding ones.*/
+         and each subsequent number in the sequence is the sum of the two preceding ones.*//*
         System.out.print("Enter the number of Fibonacci terms to generate: ");
         int n = input.nextInt();
 
@@ -225,8 +238,8 @@ public class Main {
 
     }
 
-    /*----------------------Methods----------------------*/
-    /*Method For (Q4) */
+    *//*----------------------Methods----------------------*//*
+    *//*Method For (Q4) *//*
     public static void reverseArray(int[] arr) {
 
         for (int i = 0; i < arr.length / 2; i++) {
@@ -239,8 +252,8 @@ public class Main {
         }
     }
 
-    /*----------------------Methods----------------------*/
-    /*Method For (Q6) */
+    *//*----------------------Methods----------------------*//*
+    *//*Method For (Q6) *//*
     static Random random = new Random();
 
     public static int randomNumber(int min, int max) {
@@ -248,8 +261,8 @@ public class Main {
         return random.nextInt(max - min + 1) + min;
     }
 
-    /*----------------------Methods----------------------*/
-    /*Method For (Q7) */
+    *//*----------------------Methods----------------------*//*
+    *//*Method For (Q7) *//*
     static int checkLength(String password) {
 
         if (password.length() <= 5) {
@@ -299,8 +312,8 @@ public class Main {
 
         return 0;
     }
-    /*----------------------Methods----------------------*/
-    /*Method For (Q7) */
+    *//*----------------------Methods----------------------*//*
+    *//*Method For (Q7) *//*
 
     public static void fibonacci(int n) {
 
@@ -315,7 +328,7 @@ public class Main {
 
             first = second;
             second = next;
-        }
+        }*/
 
     }
 }

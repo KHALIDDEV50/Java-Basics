@@ -46,6 +46,7 @@ public class Main {
     }
 
     // ==> This Methods For (Q1)....
+    //----- smail
     public static int smallest(int num1, int num2, int num3) {
         Scanner input = new Scanner(System.in);
         int smaller = num1;

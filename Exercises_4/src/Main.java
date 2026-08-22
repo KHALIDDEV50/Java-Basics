@@ -94,6 +94,8 @@ public class Main {
 
         // (Q5) Write a program that places the odd elements of an array before the even elements.
 
+        //  ------
+
         System.out.println("Enter Arry: ");
         int arr[] = new int[9];
         for (int i =0 ; i < 9 ; i++){
